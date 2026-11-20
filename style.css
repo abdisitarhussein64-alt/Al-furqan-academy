@@ -1,0 +1,56 @@
+:root {
+    --green: #0f4c3a;
+    --green-dark: #0a352a;
+    --gold: #c9a24a;
+    --paper: #f7f8f5;
+    --ink: #1d2a25;
+    --line: #d9e0da;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.7;
+  }
+  header {
+    background: var(--green-dark);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 6vw;
+  }
+  .brand { font-size: 1.4rem; font-weight: bold; letter-spacing: .5px; }
+  nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 20px; }
+  nav a { color: #fff; text-decoration: none; padding-bottom: 3px; border-bottom: 2px solid transparent; }
+  nav a:hover, nav a.active { border-bottom-color: var(--gold); }
+  .hero {
+    background: var(--green);
+    color: #fff;
+    padding: 72px 6vw 80px;
+    border-bottom: 6px solid var(--gold);
+  }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.2; max-width: 20ch; }
+  .hero p { max-width: 62ch; margin-top: 18px; font-size: 1.1rem; opacity: .95; }
+  .btn {
+    display: inline-block; margin-top: 28px; padding: 12px 26px;
+    background: var(--gold); color: var(--green-dark);
+    font-weight: bold; text-decoration: none; border-radius: 4px;
+  }
+  .btn:hover { background: #dbb65f; }
+  .btn:focus-visible, nav a:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  main { padding: 56px 6vw; max-width: 1100px; margin: 0 auto; }
+  .motto {
+    text-align: center; font-size: 1.5rem; font-style: italic;
+    color: var(--green); padding: 8px 0 48px;
+  }
+  .two-col { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .panel { background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--green); padding: 24px; }
+  h2 { color: var(--green); font-size: 1.3rem; margin-bottom: 8px; }
+  .values { margin-top: 48px; }
+  .values ol { margin-top: 12px; padding-left: 1.4em; }
+  .values li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+  footer { background: var(--green-dark); color: #cfd8d3; text-align: center; padding: 22px 6vw; font-size: .9rem; }
